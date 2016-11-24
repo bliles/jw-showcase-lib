@@ -30,13 +30,12 @@
             background-color: rgba($black, 0.8);
         }
 
-        .jw-card-controls,
-        .jw-card-play-button {
+        .jw-card-controls {
             opacity: 1;
         }
 
-        .jw-card-text-now-playing {
-            display: block;
+        .jw-card-play-button {
+            display: none;
         }
     }
 
@@ -102,7 +101,7 @@
     }
 
     .jw-card-text-now-playing {
-        display: none;
+        font-size: rem(19px);
     }
 
     .jw-card-title {

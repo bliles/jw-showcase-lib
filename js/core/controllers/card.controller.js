@@ -163,10 +163,6 @@
             event.preventDefault();
             event.stopImmediatePropagation();
 
-            if (true === vm.nowPlaying && clickedOnPlayIcon) {
-                player.play();
-            }
-
             if (angular.isFunction(vm.onClick)) {
                 vm.onClick(vm.item, clickedOnPlayIcon);
             }

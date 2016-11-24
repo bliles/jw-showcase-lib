@@ -8,9 +8,9 @@
     <div class="jw-card-controls">
       <div class="jw-card-controls-align">
         <jw-button class="jw-card-play-button jw-button-play" ng-click="vm.clickHandler($event, true)">
-          <i class="jwy-icon jwy-icon-{{ vm.nowPlaying && !vm.player.paused ? 'pause' : 'play' }}"></i>
+          <i class="jwy-icon jwy-icon-play"></i>
         </jw-button>
-        <div class="jw-card-text jw-card-text-now-playing">Currently playing</div>
+        <div class="jw-card-text jw-card-text-now-playing" ng-if="vm.nowPlaying">Currently playing</div>
       </div>
       <div class="jw-card-duration jw-card-text">{{ ::vm.duration }}</div>
     </div>
