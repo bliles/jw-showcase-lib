@@ -24,7 +24,7 @@
      * Application's core module
      */
     angular
-        .module('jwShowcase.core', [])
+        .module('jwShowcase.core', ['ngSanitize'])
         .constant('DEFAULT_CONTENT_SERVICE', 'https://content.jwplatform.com')
         .config(config)
         .run(run);
