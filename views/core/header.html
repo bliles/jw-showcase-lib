@@ -4,7 +4,9 @@
       <jw-button-menu></jw-button-menu>
     </div>
     <div class="jw-header-main">
-      <img class="jw-header-logo" ui-sref="root.dashboard()" ng-src="{{ ::vm.config.bannerImage }}" alt="logo"/>
+      <a ng-href="{{ vm.config.bannerImageURL ? vm.config.bannerImageURL : vm.rootURL }}">
+        <img class="jw-header-logo"  ng-src="{{ ::vm.config.bannerImage }}" alt="logo"/>
+      </a>
     </div>
     <div class="jw-header-nav">
       <jw-search ng-if="vm.config.searchPlaylist"></jw-search>

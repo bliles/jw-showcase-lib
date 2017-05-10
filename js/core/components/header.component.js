@@ -44,10 +44,12 @@
      *
      * @requires jwShowcase.config
      */
-    HeaderController.$inject = ['config'];
-    function HeaderController (config) {
+    HeaderController.$inject = ['config', '$state'];
+    function HeaderController (config, $state) {
 
         this.config = config;
+
+        this.rootURL = $state.href('root.dashboard');
     }
 
 }());
